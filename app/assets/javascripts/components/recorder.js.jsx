@@ -54,7 +54,7 @@ var Recorder = React.createClass({
 
     return (
       <div className="controls">
-        <h3>Recorder</h3>
+        <h3>Recorder and Jukebox</h3>
         <button onClick={this.recordClick} className="record-button">
           { this.recordingMessage() }
         </button>

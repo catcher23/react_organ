@@ -45,7 +45,7 @@
   content: " ";
   clear: both;
   height: 0;
-} 
+}
 
 .group:after {
   content: "";

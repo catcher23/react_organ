@@ -10,8 +10,8 @@ var JukeBox = React.createClass({
 
   render: function () {
     return (
-      <div className="jukebox">
-        <h3>JUKEBOX</h3>
+      <div className="jukebox controls">
+    
         {
           this.state.tracks.map(function (track) {
             return <TrackPlayer key={track.get('id')} track={track}/>
