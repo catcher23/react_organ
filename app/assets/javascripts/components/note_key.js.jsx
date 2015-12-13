@@ -9,11 +9,39 @@ var NoteKey = React.createClass({
   },
 
   render: function () {
-    var className = "note-key";
+    var className;
+    if (this.props.counter === 0) {
+      className = "white";
+    }
+    if (this.props.counter === 1) {
+      className = "white";
+    }
+    if (this.props.counter === 2) {
+      className = "white";
+    }
+    if (this.props.counter === 3) {
+      className = "white";
+    }
+    if (this.props.counter === 4) {
+      className = "white";
+    }
+    if (this.props.counter === 5) {
+      className = "white";
+    }
+    if (this.props.counter === 6) {
+      className = "white";
+    }
+    if (this.props.counter === 7) {
+      className = "white";
+    }
+    if (this.props.counter === 8) {
+      className = "white";
+    }
+
     if(this.state.pressed){
       className += " pressed";
     }
-    return <div className={className}>{this.props.noteName}</div>;
+    return <div className={className} >{this.props.noteName}</div>;
   },
 
   thisKeyPressed: function () {

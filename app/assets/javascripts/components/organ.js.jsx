@@ -8,12 +8,14 @@ var Organ = React.createClass({
   },
 
   render: function () {
+    var counter = 0;
     return (
       <div>
         <div className="keys group">
         {
           Object.keys(TONES).map(function (noteName) {
-            return (<NoteKey noteName={noteName} key={noteName}/>);
+            counter+=1;
+            return (<NoteKey noteName={noteName} key={noteName} counter={counter}/>);
           })
         }
         </div>
